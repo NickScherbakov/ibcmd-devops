@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1",
+  "autonomousActions": [
+    "inventory.read",
+    "ibcmd.help",
+    "logs.read",
+    "artifacts.hash",
+    "plan.prepare"
+  ],
+  "approvalRequired": [
+    "infobase.dump",
+    "config.export",
+    "config.import",
+    "config.load",
+    "config.apply",
+    "service.stop",
+    "session.terminate"
+  ],
+  "autonomousActionsForbidden": [
+    "production.repair",
+    "production.restore",
+    "production.drop",
+    "secret.readback",
+    "arbitrary.shell"
+  ],
+  "notes": [
+    "LLM не получает прямой произвольный shell-доступ.",
+    "Исполнитель принимает только типизированные команды из allowlist.",
+    "Все изменения PROD требуют внешнего подтверждения и аудита."
+  ]
+}

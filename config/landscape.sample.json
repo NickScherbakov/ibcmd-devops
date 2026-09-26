@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "0.1",
+  "defaults": {
+    "ibcmdPath": "ibcmd",
+    "logRoot": "./artifacts/logs",
+    "artifactRoot": "./artifacts"
+  },
+  "infobases": [
+    {
+      "id": "erp-prod",
+      "enabled": true,
+      "kind": "client-server",
+      "environment": "prod",
+      "criticality": "A",
+      "platformVersion": "VERIFY-ME",
+      "connectionArguments": [
+        "--config=/secure/1c/erp-prod.yml"
+      ],
+      "policy": {
+        "allowAutonomousReadOnly": true,
+        "requireHumanApprovalForDump": true,
+        "requireHumanApprovalForConfigImport": true,
+        "requireHumanApprovalForApply": true
+      }
+    },
+    {
+      "id": "legacy-file",
+      "enabled": false,
+      "kind": "file",
+      "environment": "prod",
+      "criticality": "B",
+      "platformVersion": "VERIFY-ME",
+      "databasePath": "/srv/1c/legacy/1Cv8.1CD",
+      "note": "Файловые базы и chdbfl в прототипе 0.1.0 не автоматизированы."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "Command": "ibcmd infobase config export --config=./config/demo.yml --password=<redacted> --sync ./artifacts/article-dry-run/config-xml",
+  "DryRun": true,
+  "ExitCode": null,
+  "OutputDirectoryExists": false,
+  "LogExists": false,
+  "SecretMasked": true
+}
