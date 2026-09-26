@@ -1,3 +1,5 @@
+<a href="https://infostart.ru/public/2798296/"><img src="https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg" alt="Infostart" style="vertical-align: middle;"></a> - Первая часть
+
 # Ibcmd.DevOps
 
 Экспериментальный PowerShell-модуль и архитектурный каркас для управляемой автоматизации `ibcmd` в неоднородном ландшафте 1С:Предприятие.
